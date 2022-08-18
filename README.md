@@ -33,7 +33,7 @@ Set-MDNS
 
 - Chromium browsers, i.e. Edge and Chrome, cannot turn off mDNS as seen below.
 
-![Chrome MDNS](Chrome_MDNS.png)
+![Chrome MDNS](https://github.com/stevesec/mDNS_Discovery/blob/main/Chrome_mDNS.PNG)
 
 ## References
 
