@@ -1,4 +1,4 @@
-# mDNS_Discovery
+# mDNS Discovery
 
 ## Multicast DNS (mDNS) Overview
 
