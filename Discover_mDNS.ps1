@@ -38,6 +38,7 @@ C:\PS> Get-MDNS -File .\List_of_servers.txt
         [Parameter()]
         [string]$File
     )
+    Write-Host "-------------------Getting Hosts with mDNS-------------------"
     if ($File) {   
         foreach ($line in Get-Content -Path $File) {
             try {
@@ -61,6 +62,7 @@ C:\PS> Get-MDNS -File .\List_of_servers.txt
         }
     }
     elseif ($Server) {
+        Write-Host "-------------------Getting $Server with mDNS-------------------"
         try {
             $test = Resolve-DnsName -Name $Server
             if ($test) {
@@ -116,6 +118,7 @@ C:\PS> Set-MDNS
         [string]$file='C:\Temp\Hosts_W_MDNS.txt'
     )
     $ErrorActionPreference = "Continue"
+    Write-Host "-------------------Setting Registry Key-------------------"
     foreach ($line in Get-Content -Path $file){
         try {
             $regkey = (Invoke-Command -ComputerName $line -ScriptBlock { Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters" -Name "EnableMDNS" | Select-Object -ExpandProperty "EnableMDNS"})
