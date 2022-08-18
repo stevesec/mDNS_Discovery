@@ -6,7 +6,7 @@
 
 ## The Penetration Tester Dilemma
 
-Penetration Testers get asked a lot: "Where are the hosts on my network that have mDNS enabled?" And sometimes we can't give the full answer because either we don't keep a log of the clients that have it, or there is an evergrowing number of hosts on a clients network. 
+Penetration Testers get asked a lot: "Where are the hosts on my network that have mDNS enabled?" and we can't always answer that because there is an evergrowing number of hosts on a client's network. 
 
 ## Usage:
 
