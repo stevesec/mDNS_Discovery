@@ -86,6 +86,31 @@ C:\PS> Get-MDNS -File .\List_of_servers.txt
 
 
 function Set-MDNS {
+<#
+.SYNOPSIS
+
+This script will add the registry key to disable mDNS.
+
+Author: Steve Nelson (@SteveSec)
+License: MIT
+Required Dependencies: None
+Optional Dependencies: None
+
+.DESCRIPTION
+
+This script will add the registry key to disable mDNS.
+
+.PARAMETER File
+
+Newline separated file that contains the resolved hostnames of hosts on the Active Directory domain.
+
+.EXAMPLE
+
+C:\PS> Set-MDNS
+
+
+#>
+    
     Param(
         [Parameter()]
         [string]$file='C:\Temp\Hosts_W_MDNS.txt'
