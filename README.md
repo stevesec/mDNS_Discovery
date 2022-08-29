@@ -33,7 +33,7 @@ Sets the registry key for mDNS.
 ```
 Set-MDNS
 ```
-At the end of the script, run to disable (Disable-PSRemoting)[https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/disable-psremoting?view=powershell-7.2]:
+At the end of the script, run to disable [Disable-PSRemoting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/disable-psremoting?view=powershell-7.2):
 ```
 Disable-PSRemoting
 ```
