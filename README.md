@@ -12,6 +12,11 @@ Penetration Testers get asked a lot: "Where are the hosts on my network that hav
 
 The following scripts will help answer those questions and help disable mDNS if need be. 
 
+This needs an administrative PowerShell window and to enable [Enable-PSRemoting](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enable-psremoting?view=powershell-7.2):
+
+```
+Enable-PSRemoting
+```
 This command will initialze the scripts.
 ```
 Import-Module Discover_mDNS.ps1 
@@ -28,7 +33,10 @@ Sets the registry key for mDNS.
 ```
 Set-MDNS
 ```
-
+At the end of the script, run to disable (Disable-PSRemoting)[https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/disable-psremoting?view=powershell-7.2]:
+```
+Disable-PSRemoting
+```
 ## Current Problems
 
 - Chromium browsers, i.e. Edge and Chrome, cannot turn off mDNS as seen below.
